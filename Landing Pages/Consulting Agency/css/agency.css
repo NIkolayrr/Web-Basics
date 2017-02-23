@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+body {
+    background: #ccc;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+.site-header {
+    background: url('../images/header-bg.jpg') no-repeat;
+    color: white;
+    position: relative;
+    min-height: 600px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.inner-header {
+    max-width: 77%;
+    margin: 10px auto 0 auto;
+}
+
+nav {
+    background: rgba(186, 146, 94, .9);
+    min-height: 50px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    position: relative;
+    margin-right: 7%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px 0 10px;
+    display: block;
+    transition: background .5s ease;
+}
+
+nav ul li a:hover {
+    background: rgb(186, 146, 94);
+}
+
+.jumbotron {
+    text-align: center;
+    width: 50%;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+
+.jumbotron h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    margin-bottom: 1.3em;
+}
+
+.jumbotron p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.jumbotron p span {
+    display: block;
+}
+
+.jumbotron .btn {
+    position: relative;
+    text-decoration: none;
+    background: #080820;
+    padding: 10px 15px 10px 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: .9em;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.jumbotron .btn i {
+    margin-left: 3px;
+}
+
+.jumbotron .btn:hover {
+    background: rgb(186, 146, 94);
+    color: #080820;
+}
+
+/* Main section */
+main {
+    margin: 0;
+    position: relative;
+    background: white;
+}
+
+main h1 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/** Industries section **/
+.industries {
+    position: relative;
+    color: #07091e;
+}
+
+.industries h1 {
+    font-size: 2.5em;
+}
+
+.inner-industries {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    justify-content: space-around;
+}
+
+.inner-industries article {
+    flex-basis: 28%;
+    margin: 1% 5% 1% 0;
+    align-items: center;
+    position: relative;
+}
+
+.inner-industries article span {
+    background: #080820;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.inner-industries article span i {
+    color: white;
+    line-height: 40px;
+    font-size: 1.4em;
+}
+
+.inner-industries article h4 {
+    margin-bottom: 10px;
+}
+
+/* desktop */
+@media (max-width: 800px) {
+    .inner-industries {
+        margin-left: 10%;
+    }
+
+    .inner-industries article {
+        flex-basis: 30%;
+    }
+}
+
+/* mobile */
+@media (max-width: 360px) {
+    .inner-industries article {
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/** Missions section **/
+.missions {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.missions:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background: url('../images/steel-bg.jpg');
+    opacity: .4;
+}
+
+.missions .text {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 30px;
+    width: 500px;
+    font-size: 1.1em;
+    z-index: 2;
+}
+
+.missions .text h4 {
+    color: #ca954e;
+}
+
+/** Benefits section **/
+.benefits {
+    width: 100%;
+    height: 300px;
+    color: white;
+    padding-top: 20px;
+    position: relative;
+    background: black;
+    z-index: 1;
+}
+
+.benefits:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    background: url('../images/background-choose-us.jpg');
+    opacity: .4;
+}
+
+.benefits h1 {
+    margin-top: 20px;
+}
+
+.benefits .choseUs {
+    margin: 0 auto;
+    width: 80%;
+    z-index: 5;
+}
+
+.choseUs article {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    margin: 1%;
+    height: 150px;
+    padding: 40px;
+    cursor: pointer;
+    border: 1px solid #ca954e;
+    transition: all .5s ease;
+}
+
+.choseUs article:hover {
+    background: #ca954e;
+    color: white;
+}
+
+.choseUs h4 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.choseUs p {
+    font-size: .9em;
+}
+
+/** Testimonials section **/
+.testimonials {
+    background: url("../images/consulting-woman.jpg");
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.testimonials > div {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .8);
+    width: 40%;
+    float: right;
+    padding: 30px
+}
+.testimonials .author{
+    float: right;
+    margin-right: 40px;
+}
+.testimonials .author h4{
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+.testimonials blockquote {
+    margin-top: 50px;
+    position: relative;
+}
+.testimonials blockquote span{
+    display: block;
+    margin-top: 15px;
+}
+.testimonials blockquote:before, .testimonials blockquote:after {
+    font-size: 1.5em;
+    color: #ca954e;
+    position: absolute;
+}
+
+.testimonials blockquote:before {
+    content: '"';
+    top: -10px;
+    left: -10px;
+}
+
+.testimonials blockquote:after {
+    content: '"';
+    bottom: 0;
+    left: 100%;
+}
+
+/** Partners section **/
+.partners {
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.partners .sponsors {
+    list-style: none;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.partners .sponsors li {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    transition: opacity .5s linear;
+    cursor: pointer;
+}
+
+.partners .sponsors li:nth-child(1) {
+    background: url('../images/partner-arcade.png') no-repeat center;
+    background-size: contain;
+}
+
+.partners .sponsors li:nth-child(2) {
+    background: url('../images/partner-Edtech.png') no-repeat center;
+    background-size: contain;
+}
+
+.partners .sponsors li:nth-child(3) {
+    background: url('../images/partner-fast-brothers.png') no-repeat center;
+    background-size: contain;
+}
+
+.partners .sponsors li:nth-child(4) {
+    background: url('../images/partner-KPhone.png') no-repeat center;
+    background-size: contain;
+}
+
+.partners .sponsors li:nth-child(5) {
+    background: url('../images/partner-TVC.png') no-repeat center;
+    background-size: contain;
+}
+
+.partners .sponsors li:nth-child(6) {
+    background: url('../images/partner-Volker-Stevin.png') no-repeat center;
+    background-size: contain;
+}
+
+.partners .sponsors li:hover {
+    opacity: .6;
+}
+
+/* Footer */
+.site-footer {
+    background: #080820;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+    color: white;
+}
+
+.consulting h4, .extra-links h4, .instagram-widget h4 {
+    font-size: 1.2em;
+}
+
+.consulting p {
+    margin: 20px 0 0 20px;
+}
+
+.consulting p > span {
+    display: block;
+}
+
+.consulting .social {
+    margin: 20px 0 0 100px;
+}
+
+.consulting .social > a {
+    background: rgba(255, 255, 255, .8);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+.consulting .social > a i {
+    font-size: 1.2em;
+    line-height: 30px;
+    color: #080820;
+}
+
+.extra-links div {
+    display: flex;
+    flex-direction: row;
+}
+
+.extra-links ul {
+    list-style: none;
+}
+
+.extra-links ul li {
+    margin-bottom: 5px;
+}
+
+.extra-links ul li a {
+    text-decoration: none;
+    color: #ca954e;
+}
+
+#instagram-pics {
+    width: 350px;
+    background: red;
+    position: relative;
+}
+
+#instagram-pics ul {
+    list-style: none;
+    position: relative;
+}
+
+#instagram-pics ul li {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    float: left;
+    cursor: pointer;
+}
+#instagram-pics ul li:hover{
+    opacity: .6;
+}
+
+#instagram-pics ul li img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
