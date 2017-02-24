@@ -223,7 +223,9 @@ main{
 }
 .events .btn{
     text-decoration: none;
+    border: none;
     background: #fa6a2e;
+    cursor: pointer;
     color: white;
     text-transform: uppercase;
     padding: 5px 20px 5px 20px;
