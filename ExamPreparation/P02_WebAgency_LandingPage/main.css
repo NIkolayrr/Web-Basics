@@ -1,0 +1,89 @@
+@import url('https:// fonts.googleapis.com/css?family=Open+Sans:400,700|Kreon:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px 'Open Sans', sans-serif;
+}
+
+/*===== HEADER ====*/
+.main-header {
+    background: url('Resourses/img/header-background.jpg') no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 20px 20px 30px 20px;
+}
+
+.main-header ul {
+    list-style: none;
+}
+
+.main-header ul li {
+    display: inline-block;
+}
+
+.main-header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+.main-header .logo a {
+    text-transform: capitalize;
+    font: 32px "Kreon";
+}
+
+.header-text {
+    color: white;
+    margin-top: 20%;
+}
+
+.header-text h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+}
+
+.header-text h1 span {
+    display: block;
+}
+
+/*===== MAIN ====*/
+
+/**====== PRESENT =======**/
+.present{
+    display: flex;
+}
+.present article{
+    color: white;
+    padding: 30px 10px 0 20px;
+    width: 100%;
+}
+.present article img{
+    float: left;
+}
+.present article h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.present article p{
+    max-width: 500px;
+}
+.portfolio{
+    background: #f4474f;
+}
+.result{
+    background: #31c7d8;
+}
+/**====== OFFERS =======**/
+.offers{
+    padding: 20px;
+}
