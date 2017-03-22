@@ -31,13 +31,20 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 40px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background .5s ease;
 }
-
+.main-header ul li a:hover{
+    background: #f4474f;
+}
 .main-header .logo a {
     text-transform: capitalize;
     font: 32px "Kreon";
 }
-
+.main-header .logo a:hover{
+    background: none;
+}
 .header-text {
     color: white;
     margin-top: 20%;
@@ -59,31 +66,102 @@ body {
 /*===== MAIN ====*/
 
 /**====== PRESENT =======**/
-.present{
+.present {
     display: flex;
 }
-.present article{
+
+.present article {
     color: white;
     padding: 30px 10px 0 20px;
     width: 100%;
 }
-.present article img{
+
+.present article img {
     float: left;
 }
-.present article h3{
+
+.present article h3 {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.present article p{
+
+.present article p {
     max-width: 500px;
 }
-.portfolio{
+
+.portfolio {
     background: #f4474f;
 }
-.result{
+
+.result {
     background: #31c7d8;
 }
+
 /**====== OFFERS =======**/
-.offers{
+.offers {
     padding: 20px;
+}
+
+.offers > h1 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+.offers > h4 {
+    max-width: 550px;
+    color: #858585;
+    font-weight: 400;
+}
+
+.offers ul {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.offers ul li {
+    box-sizing: border-box;
+    max-width: 400px;
+    padding: 0 30px;
+    border-right: 1px solid #858585;
+}
+
+.offers ul li:last-child {
+    border: none;
+}
+
+.offers ul li h3 {
+    margin: 15px 0;
+}
+
+/**====== GET QUOTE =======**/
+.get-quote {
+    background: #f4474f;
+    color: white;
+    margin-top: 20px;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    background: white;
+    color: #f4474f;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.btn:hover{
+    color: #583a58;
+}
+/*====== SITE FOOTER =======*/
+.main-footer {
+    background: #4e4367;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
