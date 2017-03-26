@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,900");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px "Open Sans";
+}
+
+/*====== HEADER ======*/
+.site-header {
+    padding: 20px;
+}
+
+.site-header nav {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.site-header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #afafaf;
+    padding-bottom: 5px;
+    transition: all .3s ease;
+}
+
+.site-header ul li a:hover {
+    color: black;
+    box-shadow: 0 1px black;
+}
+
+/*====== MAIN ======*/
+main > section {
+    width: 100%;
+}
+
+/**===== PRODUCTS =====*/
+
+.products {
+    background: white;
+    margin-bottom: 15px;
+}
+
+.products .btn {
+    background: #fe0003;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.products .btn:hover {
+    background: #b60003;
+}
+
+.solo-wireless, .powerbeats {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.solo-wireless {
+    padding-left: 80px;
+}
+
+.solo-wireless article {
+    order: 1;
+    flex-grow: 2;
+}
+
+.solo-wireless img {
+    order: 2;
+    width: 50%;
+}
+
+.solo-wireless article header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 25px 0;
+}
+
+.solo-wireless article p {
+    max-width: 350px;
+}
+
+.solo-wireless article footer {
+    margin-top: 35px;
+}
+
+.powerbeats {
+    padding-right: 40px;
+}
+
+.powerbeats article {
+    padding-left: 100px;
+}
+
+.powerbeats article header {
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.powerbeats article header h1 {
+    font-size: 5em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.powerbeats article header h4 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.powerbeats article header h4 strong {
+    font-weight: 900;
+}
+
+.powerbeats article p {
+    max-width: 400px;
+}
+
+.powerbeats article footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.powerbeats article footer .price {
+    font-size: 2em;
+    font-weight: 900;
+    margin-right: 25px;
+}
+
+/**===== TRY NOW SECTION =====*/
+.try-now {
+    background: #575757 url("img/beats-logo-small-white.png") no-repeat;
+    background-position: left 25% center;;
+    padding: 100px 0 50px 0;
+}
+
+.try-now .inner {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.try-now .inner h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #c9c9c9;
+    font-size: 1.8em;
+    margin-bottom: 65px;
+}
+
+.try-now .inner h1 strong {
+    font-weight: 900;
+    color: white;
+}
+
+.try-now .inner .link {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 0 white;
+    font-size: 1.8em;
+    color: white;
+    font-weight: 900;
+}
+
+/**===== ARTWORK SECTION =====**/
+.artwork {
+    display: flex;
+}
+
+.woman-portrait {
+    background: url("img/beats-girl.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 50%;
+    min-height: 580px;
+}
+
+.give-life {
+    width: 100%;
+    padding: 40px 80px;
+    background: #dadada url("img/beats-red.png") no-repeat;
+    background-position: right 50px center;
+    background-size: 25%;
+}
+
+.give-life h1 {
+    font-size: 10em;
+    color: #303030;
+    font-weight: bolder;
+    letter-spacing: -8px;
+    text-transform: uppercase;
+}
+
+.give-life h1 span {
+    display: block;
+    margin-top: -40px;
+}
+
+.give-life h3 {
+    font-weight: 400;
+    font-size: 3em;
+    color: #838383;
+}
+
+.give-life h3 span {
+    color: #ea0713;
+    font-weight: 900;
+    margin-left: -10px;
+    text-transform: uppercase;
+}
+
+/**===== FOOTER =====**/
+.site-footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.site-footer p {
+    color: #4a4a4a;
+    font-size: 1.2em;
+}
